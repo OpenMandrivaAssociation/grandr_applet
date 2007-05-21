@@ -1,13 +1,13 @@
 %define name grandr_applet
-%define version 0.2
-%define release %mkrel 8
+%define version 0.3
+%define release %mkrel 1
 
 Summary: Screen resolution changer applet for the GNOME panel
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: http://handhelds.org/~mallum/downloadables/%{name}-%{version}.tar.bz2
-URL: http://handhelds.org/~mallum/
+Source0: http://dekorte.homeip.net/download/grandr-applet/%{name}-%{version}.tar.bz2
+URL: http://dekorte.homeip.net/download/grandr-applet/
 License: GPL
 Group: Graphical desktop/GNOME
 BuildRoot: %{_tmppath}/%{name}-buildroot
@@ -15,9 +15,8 @@ Requires: gnome-panel
 BuildRequires: libpanel-applet-devel
 
 %description
-GrandrApplet is a simple gnome-panel front end to the xrandr extension
-found in XFree86 4.3+ releases. You can use it to switch the screen resolution
-on the fly.
+GrandrApplet is a simple gnome-panel front end to the xrandr extension. You
+can use it to switch the screen resolution and orientation on the fly.
 
 %prep
 %setup -q
@@ -29,13 +28,15 @@ on the fly.
 %install
 rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
+rm -fr %buildroot/%_datadir/doc
+%find_lang %name
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %name.lang
 %defattr(-,root,root)
-%doc README AUTHORS
+%doc ChangeLog NEWS README AUTHORS
 %_libdir/bonobo/servers/GrandrApplet.server
 %_libdir/grandr
 %_datadir/pixmaps/grandr.png
