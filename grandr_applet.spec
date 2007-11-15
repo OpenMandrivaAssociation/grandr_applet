@@ -1,12 +1,12 @@
 %define name grandr_applet
-%define version 0.3
-%define release %mkrel 2
+%define version 0.4
+%define release %mkrel 1
 
 Summary: Screen resolution changer applet for the GNOME panel
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: http://dekorte.homeip.net/download/grandr-applet/%{name}-%{version}.tar.bz2
+Source0: http://dekorte.homeip.net/download/grandr-applet/%{name}-%{version}.tar.gz
 Patch: grandr_applet-0.3-deprecated.patch
 URL: http://dekorte.homeip.net/download/grandr-applet/
 License: GPL
