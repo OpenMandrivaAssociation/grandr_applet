@@ -1,5 +1,5 @@
 %define name grandr_applet
-%define version 0.4
+%define version 0.4.1
 %define release %mkrel 1
 
 Summary: Screen resolution changer applet for the GNOME panel
