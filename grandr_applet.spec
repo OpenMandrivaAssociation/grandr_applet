@@ -12,6 +12,7 @@ Patch1: grandr_applet-0.4.1-libexecdir.patch
 URL: http://dekorte.homeip.net/download/grandr-applet/
 License: GPL
 Group: Graphical desktop/GNOME
+BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: gnome-panel
 BuildRequires: libpanel-applet-devel
 
