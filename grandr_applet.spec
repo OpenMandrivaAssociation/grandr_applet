@@ -1,6 +1,6 @@
 %define name grandr_applet
 %define version 0.4.1
-%define release %mkrel 4
+%define release %mkrel 5
 
 Summary: Screen resolution changer applet for the GNOME panel
 Name: %{name}
@@ -15,6 +15,7 @@ Group: Graphical desktop/GNOME
 BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: gnome-panel
 BuildRequires: libpanel-applet-devel
+BuildRequires: libgnomeui2-devel
 
 %description
 GrandrApplet is a simple gnome-panel front end to the xrandr extension. You
