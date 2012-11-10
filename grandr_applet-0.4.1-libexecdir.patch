@@ -1,0 +1,11 @@
+--- grandr_applet-0.4.1/GrandrApplet.server.in~	2007-12-13 16:14:33.000000000 +0100
++++ grandr_applet-0.4.1/GrandrApplet.server.in	2007-12-16 18:25:32.000000000 +0100
+@@ -2,7 +2,7 @@
+ 
+ <oaf_server iid="OAFIID:GrandrApplet_factory" 
+ 	    type="exe"
+-            location="@prefix@/libexec/grandr">
++            location="@libexecdir@/grandr">
+ 
+         <oaf_attribute name="repo_ids" type="stringv">
+                 <item value="IDL:Bonobo/GenericFactory:1.0"/>

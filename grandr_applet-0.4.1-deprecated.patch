@@ -1,0 +1,12 @@
+--- grandr_applet-0.4.1/src/Makefile.am.0000~	2007-04-12 21:27:31.000000000 +0200
++++ grandr_applet-0.4.1/src/Makefile.am	2011-07-27 09:32:40.000000000 +0200
+@@ -1,9 +1,5 @@
+ INCLUDES = -I$(top_srcdir) -I$(includedir) $(GRANDR_APPLET_CFLAGS) \
+        -DGNOMELOCALEDIR=\""$(datadir)/locale"\" \
+-       -DGNOME_DISABLE_DEPRECATED \
+-       -DGTK_DISABLE_DEPRECATED \
+-       -DGDK_DISABLE_DEPRECATED \
+-       -DG_DISABLE_DEPRECATED \
+        -DDATADIR=\""$(datadir)/"\" \
+        -DPREFIX=\""$(prefix)/"\" \
+        -DLIBDIR=\""$(libdir)/"\" \
