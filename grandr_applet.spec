@@ -23,7 +23,7 @@ can use it to switch the screen resolution and orientation on the fly.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 aclocal
 autoconf
